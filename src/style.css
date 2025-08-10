@@ -25,3 +25,28 @@ body {
 
 /* Header */
 
+#header {
+    position: fixed;
+    min-height: 6vh;
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    padding: 0 2rem;
+    grid-column: span 4;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    background-color: var(--light-green);
+    z-index: 1;
+    box-shadow: 0px -1px 10px #606c38;
+}
+
+#header img {
+    height: 4vh;
+}
+
+#header .tab {
+    cursor: pointer;
+}
+
+/* Home page */
+
