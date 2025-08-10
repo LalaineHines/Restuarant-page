@@ -50,3 +50,155 @@ body {
 
 /* Home page */
 
+.page {
+  display: contents;
+}
+
+.page #welcome {
+  grid-column:span 4;
+  position: relative;
+  min-height: 94vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('./img/home-1.jpg');
+  background-position: center;
+  background-size: cover;
+  margin-top: 6vh;
+}
+
+.page #welcome-text-wrapper {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 40rem;
+  color: var(--light-brown);
+  background-color: #aeb7a3c7;
+  padding: 1rem 10vw 1rem 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.page #welcome-text-wrapper #welcome-text {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 0px var(--text-color);
+  margin: 0;
+  white-space: pre-line;
+}
+.page #welcome-text-wrapper #welcome-text span {
+  color: var(--light-green);
+  text-shadow: 3px 3px var(--text-color), 6px 6px var(--light-brown);
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.page #description {
+  grid-column: 2 / span 2;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+  padding: 2rem 0;
+}
+
+.page #description h2 {
+  font-size: 4.5rem;
+  color: #606c38;
+  text-shadow: 3px 3px var(--text-color), 6px 6px #dda15e;
+  margin: 0 0 2rem 0;
+  line-height: normal;
+}
+
+.page #gallery {
+  min-height: 94vh;
+  grid-column: span 4;
+  display: grid;
+  background-color: var(--light-brown);
+  gap: 0.5rem;
+  grid-template: 
+    "three two two" 4fr
+    "three four five" 5fr /
+    1fr 1fr 1fr;
+}
+
+.page #gallery #home-2 {
+  grid-area: two;
+  background-image: url('./img/home-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.page #gallery #home-3 {
+  grid-area: three;
+  background-image: url('./img/home-3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.page #gallery #home-4 {
+  grid-area: four;
+  background-image: url('./img/home-4.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.page #gallery #home-5 {
+  grid-area: five;
+  background-image: url('./img/home-5.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.page #faq {
+  display: grid;
+  grid-column: 2 / span 2;
+  padding: 2rem 2rem;
+  gap: 2rem 10vw;
+  min-height: 88vh;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+}
+
+.page #faq h3 {
+  margin-top: 0;
+}
+
+.page #faq #faq-header {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 4.5rem;
+  color: #606c38;
+  text-shadow: 3px 3px var(--text-color), 6px 6px #dda15e;
+  margin: 0;
+}
+
+.page #faq p,
+.page #faq h3 {
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+.page #footer {
+  grid-column: span 4;
+  height: 6vh;
+  width: 100%;
+  background-color: var(--light-brown);
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  grid-auto-flow: column;
+  box-shadow: 0px 1px 10px #c9ae8f;
+}
+
+.page #footer a {
+  color: var(--text-color);
+}
+
+/* Menu Page */
+
